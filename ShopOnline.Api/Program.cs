@@ -16,8 +16,9 @@ builder.Services.AddDbContextPool<ShopOnlineDbContext>(options => options.UseSql
 );
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+// builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
-var app = builder.Build();
+var app = builder.Build();       
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
